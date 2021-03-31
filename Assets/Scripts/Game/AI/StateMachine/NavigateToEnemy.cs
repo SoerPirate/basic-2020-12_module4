@@ -17,6 +17,7 @@ public class NavigateToEnemy : StateMachineBehaviour
         BotUtility botUtility = animator.GetComponentInParent<BotUtility>();
         if (!botUtility.IsNavigating())
             animator.SetTrigger("failed");
-        animator.Play("Idle");
+        else
+            animator.Play("Idle");
     }
 }
