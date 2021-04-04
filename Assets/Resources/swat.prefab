@@ -134,6 +134,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1477,6 +1478,7 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1622,6 +1624,11 @@ GameObject:
   - component: {fileID: 5889651685396290406}
   - component: {fileID: 4457621215772872781}
   - component: {fileID: 3492554384087386159}
+  - component: {fileID: 4701737870998947295}
+  - component: {fileID: 3930440037310611475}
+  - component: {fileID: 338782052802658063}
+  - component: {fileID: 191272126210674531}
+  - component: {fileID: 6507902807754331997}
   m_Layer: 6
   m_Name: swat
   m_TagString: Untagged
@@ -1865,6 +1872,71 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &4701737870998947295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240933718755912996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca305a07e837a645a0fc69a59f3ea0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EnableTraitInspectors: 1
+--- !u!114 &3930440037310611475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240933718755912996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52a27e7e82aaf840bc19d82abd63620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &338782052802658063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240933718755912996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b720fcf94fcd244873b2371f057f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_p0: 0
+--- !u!114 &191272126210674531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240933718755912996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fffd197a23152f48958a84d47c07f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_p338023941: {fileID: 901154677129404215}
+  m_p2084774077: {x: 396.23, y: 0, z: 284.7}
+  m_p2006904664: {x: 0, y: 0, z: 1}
+--- !u!114 &6507902807754331997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240933718755912996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a85aca1d746924b92a1a346edcf110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4317917584821490919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3310,6 +3382,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3737,12 +3810,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03540b3c74a27184190d45cbf6a91144, type: 3}
---- !u!4 &57269427760494716 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1395968758485205507, guid: 03540b3c74a27184190d45cbf6a91144,
-    type: 3}
-  m_PrefabInstance: {fileID: 1410765834139908735}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3489139951371410960 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2594045079789724783, guid: 03540b3c74a27184190d45cbf6a91144,
@@ -3755,3 +3822,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508e89a20fec01048ac3a129b5934bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &57269427760494716 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1395968758485205507, guid: 03540b3c74a27184190d45cbf6a91144,
+    type: 3}
+  m_PrefabInstance: {fileID: 1410765834139908735}
+  m_PrefabAsset: {fileID: 0}
